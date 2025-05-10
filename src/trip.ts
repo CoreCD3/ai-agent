@@ -3,9 +3,9 @@ export const estimateBudget = async (days: number, level: string): Promise<strin
     if (!allowedLevels.includes(level as any)) level = 'standard';
   
     const rates = {
-      budget: 800,
-      standard: 1500,
-      luxury: 3000
+      budget: 3000,
+      standard: 5000,
+      luxury: 10000
     };
   
     const daily = rates[level as keyof typeof rates];
